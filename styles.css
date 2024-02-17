@@ -181,11 +181,37 @@ section {
     font-size: 0.9em;
 }
 
+.CodeCampText {
+    margin-top: -30px;
+    margin-bottom: -40px;
+}
+
 @media (min-width: 640px) { /*@MEDIA to adjust for phonescreen when scaling page.*/
     .statsContainer {
         flex-direction: row; /*changes format to row when below 640px*/
     }
     .stats {
         gap: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    .projectItem{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .projectImgContainer {
+        min-width: 250px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 760px) {
+    .projectItem{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .projectImgContainer {
+        min-width: 250px;
     }
 }
