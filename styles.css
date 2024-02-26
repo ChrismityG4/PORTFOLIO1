@@ -127,7 +127,7 @@ section {
 .projectContainer { /*Class = grouping for styling*/
     display: flex; /*makes items in row*/
     flex-direction: column;
-    gap: 32px;
+    gap: 24px;
 }
 
 .projectItem { /*Class = grouping for styling*/
@@ -213,5 +213,13 @@ section {
     }
     .projectImgContainer {
         min-width: 250px;
+    }
+}
+
+@media (max-width: 760px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: right;
+        gap: 16px;
     }
 }
